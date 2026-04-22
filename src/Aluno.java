@@ -65,4 +65,9 @@ public class Aluno{
             System.out.println("Não conseguiu a média necessária, nota final: " + notaFinal);
         }
     }
+
+    // VALOR WORKER
+    public void worker() {
+        System.out.println(nome + " está realizando atividades escolares.");
+    }
 }
