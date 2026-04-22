@@ -1,15 +1,32 @@
-//TIP To <b>Run</b> code, press <shortcut actionId="Run"/> or
-// click the <icon src="AllIcons.Actions.Execute"/> icon in the gutter.
 public class Main {
-    public static void main(String[] args) {
-        //TIP Press <shortcut actionId="ShowIntentionActions"/> with your caret at the highlighted text
-        // to see how IntelliJ IDEA suggests fixing it.
-        System.out.printf("Hello and welcome!");
 
-        for (int i = 1; i <= 5; i++) {
-            //TIP Press <shortcut actionId="Debug"/> to start debugging your code. We have set one <icon src="AllIcons.Debugger.Db_set_breakpoint"/> breakpoint
-            // for you, but you can always add more by pressing <shortcut actionId="ToggleLineBreakpoint"/>.
-            System.out.println("i = " + i);
-        }
+    public static void main(String[] args) {
+
+        // Objeto escola
+        EscolaApp escola = new EscolaApp();
+
+        escola.setNomeEscola("EEEP Luiza de Teodoro Vieira");
+        escola.setCidade("Pacatuba - CE");
+        escola.setQuantidadeSalas(9);
+
+        // Objeto estudante
+        Aluno estudante = new Aluno();
+
+        estudante.setNome("Vinícius");
+        estudante.setMatricula(4941725);
+        estudante.setIdade(16);
+
+        // Execução
+        escola.abrirEscola();
+        escola.mostrarDadosEscola();
+        escola.worker();
+
+        estudante.exibirAluno();
+        estudante.estudar();
+        estudante.worker();
+        estudante.fazerProva();
+        estudante.consultarResultado();
+
+        escola.fecharEscola();
     }
 }
