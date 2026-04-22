@@ -48,4 +48,7 @@ public class EscolaApp {
         System.out.println("\nA escola está fechada!");
     }
 
+    public void worker() {
+        System.out.println("A escola está em funcionamento com suas atividades.");
+    }
 }
